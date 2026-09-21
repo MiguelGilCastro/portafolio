@@ -139,29 +139,45 @@
       }
     }
 
-    .imagenes-doble {
+.imagenes-doble {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   margin: 3rem 0;
 }
 
+.imagenes-doble figure {
+  width: 48%;
+  margin: 0;
+}
+
 .imagenes-doble img {
-  width: 38%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.img-caption {
+  font-size: 1.4rem;
+  color: #6b7280;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.8rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 56.25em) {
   .imagenes-doble {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
-  .imagenes-doble img {
+  .imagenes-doble figure {
     width: 100%;
   }
+
 }
   </style>
 </head>
@@ -220,11 +236,15 @@
       </li>
     </ul>
 
-    <div class="imagenes-doble">
-  <img src="./assets/problema.png" alt="Problema con desarrollo" />
-  <p class="img-caption"> Imagen referencial - Duplicación de textos</p>
-  <img src="./assets/problema2.png" alt="Solución con desarrollo" />
-  <p class="img-caption"> Imagen referencial - Variantes por región.</p>
+  <div class="imagenes-doble">
+  <figure>
+    <img src="./assets/problema.png" alt="Problema con desarrollo" />
+    <figcaption class="img-caption">Imagen referencial - Duplicación de textos</figcaption>
+  </figure>
+  <figure>
+    <img src="./assets/problema2.png" alt="Solución con desarrollo" />
+    <figcaption class="img-caption">Imagen referencial - Variantes por región.</figcaption>
+  </figure>
 </div>
 
    
