@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mensajes de error claros | Miguel Gil Castro</title>
+  <title>Mensajes de error más claros | Miguel Gil Castro</title>
 
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -146,44 +146,57 @@
 
     <a href="index.html" class="volver">← Volver al portafolio</a>
 
-    <h1>Mensajes de error claros</h1>
+    <h1>Mensajes de error más claros</h1>
     <p class="subtitulo">Microcopy para reducir fricción y tickets de soporte</p>
 
     <h2>El problema</h2>
-    <p>
+    <ul>
+      <li>El 70% de los tickets de soporte estaban relacionados con errores que el usuario no entendía.</li>
+      <li>Al no entender el contexto los usuarios generaban tickets de soporte innecesarios.</li>
+      <li>El tiempo medio de resolución de un ticket por error de formulario era de 2 días.</li>
+    </ul>
+    
+    <!--
+    <h2>Los datos mostraron</h2><p>
       Los mensajes de error del producto decían cosas como <em>"Ha ocurrido un error inesperado.
       Inténtelo de nuevo más tarde"</em>. No explicaban qué pasó, no decían qué hacer ni cómo, y generaban
       tickets de soporte innecesarios. El usuario se sentía solo frente a un muro.
     </p>
+    -->
 
-    <h2>El objetivo</h2>
+    <h2>Mi objetivo como Ux Writer</h2>
     <p>
-      Que cada mensaje de error <strong>explicara qué pasó y cómo resolverlo</strong>, en lenguaje
-      humano, muy importante: sin culpar al usuario y sin tecnicismos. Un buen mensaje de error como puede ser una guía en un momento crítico.
+      Que cada mensaje de error explicara:
+    <ul>
+      <li>Qué pasó </li>
+      <li>Cómo resolverlo</li>
+      <li>Qué pasos debía tomar el usuario</li>
+      <li>En qué paso se encontraba</li>
+    </ul>
+      sin culpar al usuario.
     </p>
 
-    <h2>Los datos mostraron</h2>
-    <ul>
-      <li>El 70% de los tickets de soporte estaban relacionados con errores que el usuario no entendía.</li>
-      <li>Los mensajes genéricos generaban más reintentos fallidos que los específicos.</li>
-      <li>El tiempo medio de resolución de un ticket por error de formulario era de 2 días.</li>
-    </ul>
 
     <h2>Un mensaje de error genérico</h2>
     <img src="./assets/caso2-antes.png" alt="Antes: mensajes de error genéricos" />
     <p class="img-caption">Imagen referencial - Antes: mensajes genéricos que no resuelven.</p>
 
-    <h2>Negociación con diseño y desarrollo</h2>
+    <h2>Colaboración con diseño y desarrollo</h2>
     <p>
-      Desarrollo quería mantener los códigos de error técnicos para poder depurar. Diseño quería que
-      los mensajes fueran visibles sin ser invasivos. Negociamos:
+      Desarrollo quería mantener los códigos de error técnicos para poder depurar. 
+      Diseño quería que los mensajes fueran visibles sin ser invasivos.
+    <p>
+      Tuve que convencer a <strong>desarrollo</strong> de que invertir tiempo en mensajes de error no
+      era "perder el tiempo en copy". Les mostré los datos de tickets y el coste asociado. 
+      Tuve mucho apoyo de los stakeholders. También coordiné con <strong>soporte</strong> para validar que los nuevos mensajes resolvían dudas reales.
     </p>
     <ul>
       <li><strong>Con desarrollo:</strong> mantener el código técnico en un log interno, pero mostrar un mensaje humano al usuario.</li>
-      <li><strong>Con diseño:</strong> usar un tono neutro pero claro, con un enlace directo a la acción.</li>
+      <li><strong>Con diseño:</strong> Sugerí colocar un personaje en el mensaje de error, como el perro de Amazon. Y a pesar de las limitaciones técnicas pusieron una carita.
+      </li>
     </ul>
 
-    <h2>Se validó porque</h2>
+    <h2>Resultados en un mes</h2>
     <div class="destacado">
       <p>
         Los <strong>tickets por errores de formulario</strong> bajaron un 40%.<br />
@@ -199,19 +212,7 @@
       <li>Creé una guía de estilo para mensajes de error que el equipo sigue usando.</li>
     </ul>
 
-    <h2>Habilidades blandas</h2>
-    <p>
-      Tuve que convencer a <strong>desarrollo</strong> de que invertir tiempo en mensajes de error no
-      era "perder el tiempo en copy". Les mostré los datos de tickets y el coste asociado. Tuve mucho apoyo de los stakeholders. También
-      coordiné con <strong>soporte</strong> para validar que los nuevos mensajes resolvían dudas reales.
-    </p>
-
-    <h2>Me sorprendió</h2>
-    <p>
-      Los usuarios <strong>leen los mensajes de error</strong> mucho más de lo que creía. Y si el mensaje
-      es claro, actúan. Cuando es genérico, abandonan. La diferencia entre un mensaje y otro es unos
-      segundos más de lectura, pero el impacto es la diferencia entre un usuario muy molesto o un usuario aliviado.
-    </p>
+   
 
         <img src="./assets/caso2-despues.png" alt= Imagen referencial - Después: mensajes de error claros y accionables />
     <p class="img-caption">Después: mensajes que explican y guían.</p>
