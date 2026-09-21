@@ -164,15 +164,27 @@
 }
 
 .filosofia-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
-.filosofia-wrapper img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.filosofia-cita {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #272341;
+  text-align: center;
+  border-left: 4px solid #5b86e5;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 37.5em) {
+  .filosofia-cita {
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+  }
 }
   </style>
 </head>
@@ -284,15 +296,17 @@
   <!-- /END Projects Section -->
 
   <!-- Filosofía Section -->
-  <section id="filosofia">
-    <div class="container">
-      <h2 class="section-title">Mi Filosofía</h2>
-      <div class="filosofia-wrapper">
-        <img src="./assets/filosofia.png" class="img-fluid" alt="Mi Filosofía" />
-      </div>
+<section id="filosofia">
+  <div class="container">
+    <h2 class="section-title">Mi Filosofía</h2>
+    <div class="filosofia-wrapper">
+      <blockquote class="filosofia-cita">
+        Una comunicación clara y sencilla, dentro del equipo y con stakeholders, es la base de la relación entre la marca y los usuarios. Esta conexión es la que permite alcanzar los objetivos del negocio y la satisfacción de las personas.
+      </blockquote>
     </div>
-  </section>
-  <!-- /END Filosofía Section -->
+  </div>
+</section>
+<!-- /END Filosofía Section -->
 
   <!-- About Section (CV + Proyecto personal) -->
   <section id="about">
