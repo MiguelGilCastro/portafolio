@@ -1,58 +1,34 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Title: add your Portfolio websites's title here -->
-  <title>Dhruv | Developer</title>
+  <title>Miguel Gil Castro | UX Writer</title>
 
-  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-  <meta name="keywords" content="L05Dhruv, Dhruv Thota, Dhruv, Dhruvy, Dhruv Narayana Thota, Full Stack Developer, AI Full Stack Developer, Software Engineer, Full Stack Developer, " />
+  <meta name="keywords" content="Miguel Gil Castro, UX Writer, Conversational Design, UX Research, Voice & Tone, Lima, Perú" />
 
-  <!-- Improve your SEO by adding a small descrption of you -->
-  <meta name="description" content="Dhruv Thota | AI Full Stack Developer, USA" />
+  <meta name="description" content="Miguel Gil Castro | UX Writer especializado en flujos conversacionales y contenido para productos digitales." />
 
-  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
   <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
-  <!-- Add your primary-theme color for the value of content -->
   <meta name="theme-color" content="#36d1dc" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <!-- Fill content with the URL of this portfolio you'll host -->
-  <meta property="og:url" content="https://devfolio.js.org/" />
-  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-  <meta property="og:title" content="Dhruv | Developer" />
-  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-  <meta property="og:description" content="Dhruv Thota personal website" />
-  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-  <meta property="og:image" content="https://devfolio.js.org/assets/devfolio.png" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="Miguel Gil Castro | UX Writer" />
+  <meta property="og:description" content="UX Writer especializado en flujos conversacionales y contenido para productos digitales." />
+  <meta property="og:image" content="" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <!-- Again fill content attr with the URL of this portfolio you'll host -->
-  <meta property="twitter:url" content="https://devfolio.js.org" />
-  <!-- Recommended to use the same text used within <title> element -->
-  <meta property="twitter:title" content="[Your name here] | Developer" />
-  <!-- short description that shows up while your portfolio is shared -->
-  <meta property="twitter:description" content="Made using DevFolio Template" />
-  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-  <meta property="twitter:image" content="https://anilseervi.vercel.app/assets/devfolio.png" />
+  <meta property="twitter:url" content="" />
+  <meta property="twitter:title" content="Miguel Gil Castro | UX Writer" />
+  <meta property="twitter:description" content="UX Writer especializado en flujos conversacionales y contenido para productos digitales." />
+  <meta property="twitter:image" content="" />
 
   <!-- link tags -->
   <link rel="stylesheet" href="./css/main.css" />
@@ -60,63 +36,281 @@ Have fun creating your portfolio on this template!!! -->
   <script src="./javascript/scrollreveal.min.js"></script>
   <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
 
-  <!-- Remove Google Analytics once you have your portfolio website set-up -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+  <style>
+    .menu-superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-    gtag("config", "UA-122228201-4");
-  </script>
-  <!-- End of Google Analytics -->
+    .menu-superior a {
+      color: #5b86e5;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .menu-superior a:hover {
+      color: #36d1dc;
+    }
+
+    @media (max-width: 37.5em) {
+      .menu-superior {
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .menu-superior a {
+        font-size: 1.4rem;
+      }
+    }
+
+    .scroll-down-link {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      color: #5b86e5;
+      font-size: 2.4rem;
+      animation: bounce 2s infinite;
+      text-decoration: none;
+    }
+
+    .scroll-down-link:hover {
+      color: #36d1dc;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 56.25em) {
+      .hero-cta {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 37.5em) {
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .contact-datos {
+      margin: 2rem 0;
+    }
+
+    .contact-datos p {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .contact-datos i {
+      margin-right: 1rem;
+      font-size: 1.8rem;
+      width: 2rem;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .contact-datos a {
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-datos a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    .menu-superior .menu-cta {
+  background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  color: #fff !important;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-superior .menu-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(91, 134, 229, 0.4);
+  color: #fff !important;
+}
+
+.filosofia-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filosofia-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  </style>
 </head>
 
 <body>
+
+  <!-- Menú superior -->
+  <nav class="menu-superior">
+    <a href="index.html">Inicio</a>
+    <a href="#projects">Casos</a>
+    <a href="#filosofia">Filosofía</a>
+    <a href="#about">CV</a>
+    <a href="#contact" class="menu-cta">Contrátame</a>
+  </nav>
+
   <!-- Hero Section -->
   <div id="hero">
     <section class="container">
       <h1 class="hero-title">
-        Hi, my name is <span class="text-color-main name">Dhruv Thota</span>
+        Hola, soy <span class="text-color-main name">Miguel Gil Castro</span>
         <br />
-        I'm the AI Full Stack Engineer.
+        UX Writer, antropólogo y conversational designer
       </h1>
       <p class="hero-cta">
-        <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
-      </p>
+  <a class="cta-btn cta-btn--hero" href="#projects">Ver casos</a>
+</p>
     </section>
     <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-      <div class="scroll-down"></div>
+      <i class="fa fa-chevron-down"></i>
     </a>
   </div>
   <!-- /END Hero Section -->
 
-  <!-- About Section -->
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Casos de estudio</h2>
+
+        <!-- Caso 1: Voz y tono de un chatbot -->
+        <div class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Voz y tono de un chatbot</h3>
+            <p class="project-wrapper__text-info">
+              Definición de la voz y el tono de un chatbot para que sonara cercano, claro y útil. Menos robot, más conversación.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="caso-1.html" target="_blank" class="cta-btn cta-btn--hero cta-btn--projects">
+                Ver caso
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image">
+            <a href="caso-1.html" target="_blank">
+              <div class="thumbnail rounded">
+                <img src="./assets/caso1-despues.png" class="img-fluid" alt="Voz y tono de un chatbot" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Caso 2: Mensajes de error claros -->
+        <div class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Mensajes de error claros</h3>
+            <p class="project-wrapper__text-info">
+              Rediseño del microcopy de errores para un producto digital. Pasamos de mensajes genéricos a mensajes que explican qué pasó y cómo resolverlo.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="caso-2.html" target="_blank" class="cta-btn cta-btn--hero cta-btn--projects">
+                Ver caso
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image">
+            <a href="caso-2.html" target="_blank">
+              <div class="thumbnail rounded">
+                <img src="./assets/caso2-despues.png" class="img-fluid" alt="Mensajes de error claros" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Caso 3: Localización con empatía -->
+        <div class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Localización con empatía</h3>
+            <p class="project-wrapper__text-info">
+              Adaptación de textos del español de España al español latinoamericano. El objetivo: que las personas se sintieran interpeladas, no ajenas.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="caso-3.html" target="_blank" class="cta-btn cta-btn--hero cta-btn--projects">
+                Ver caso
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper__image">
+            <a href="caso-3.html" target="_blank">
+              <div class="thumbnail rounded">
+                <img src="./assets/caso3-despues.png" class="img-fluid" alt="Localización con empatía" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /END Projects Section -->
+
+  <!-- Filosofía Section -->
+  <section id="filosofia">
+    <div class="container">
+      <h2 class="section-title">Mi Filosofía</h2>
+      <div class="filosofia-wrapper">
+        <img src="./assets/filosofia.png" class="img-fluid" alt="Mi Filosofía" />
+      </div>
+    </div>
+  </section>
+  <!-- /END Filosofía Section -->
+
+  <!-- About Section (CV + Proyecto personal) -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">CV + Proyecto personal</h2>
       <div class="row about-wrapper">
         <div class="about-wrapper__image">
-          <img class="img-fluid" src="./assets/IMG_1769.webp" alt="Profile Image" />
+          <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
         </div>
         <div class="about-wrapper__info">
           <p class="about-wrapper__info-text">
-            I grew up in many places but I'll always call upstate NY home. 
-            I'm an AI Full Stack Software Engineer.
-          </p>
-          <p class="about-wrapper__info-text">
-            I've worked with Fintech and Insurtech corporate clients, manufacturing companies, and Telehealth and Devtooling startups.
-          </p>
-          <p class="about-wrapper__info-text">
-            I'm interested in simple, elegant projects that have a great impact. I enjoy building solutions to make others 
-            lives/experience easier. Check out my work, reach out with any questions or if you want to have a 
-            virtual coffee and chat!
+            Soy Miguel Gil Castro, UX Writer. Escribo flujos conversacionales y contenido para productos digitales.
           </p>
           <span class="about-wrapper__cta">
-            <!-- <a href="#" class="cta-btn cta-btn--resume">View Resume</a> -->
+            <a href="#" class="cta-btn cta-btn--resume">Descarga mi CV</a>
+          </span>
+          <span class="about-wrapper__cta">
+            <a href="libro.html" class="cta-btn cta-btn--resume">Ver proyecto personal</a>
           </span>
         </div>
       </div>
@@ -124,284 +318,29 @@ Have fun creating your portfolio on this template!!! -->
   </section>
   <!-- /END About Section -->
 
-
-  <!--Projects Section-->
-  <section id="projects">
-    <div class="container">
-      <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Work projects & Open Source</h2>
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Elevated Retreats</h3>
-
-            <br>
-            <br>
-            <p class="project-wrapper__text-info">
-              A web app for finding, booking, and managing corporate luxury retreats. Built for a startup in the luxury travel industry.
-              <br>
-              <br>
-              <br>
-              <br>
-              Built with Next.js, TypeScript, React, Tailwind CSS, and Framer Motion. Integrated with AI chatbot for customer service.
-              <br>
-              <br>
-              <br>
-              <br>
-              The backend is built with Supabase postgres Database and storage, with edge functions in Node.js and Stripe for payments. 
-              <br>
-              <br>
-              <br>
-              <br>
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://www.elevatedretreats.ca/" target="_blank" class="cta-btn text-color-main">See Live</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/elevatedretreats.png" class="img-fluid" alt="Elevated Retreats Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">PepTalk Health</h3>
-            <p class="project-wrapper__text-info">
-              A telehealth startup that provides physical device integration and digital health support to patients and revenue stream for doctors.
-              <br>
-              <br>
-              iOS and Android apps built with Swift and Kotlin. Web app built with Next.js, TypeScript, React, Tailwind CSS, and Framer Motion.
-              <br>
-              <br>
-              The backend is built with Node.js and Python, hosted on AWS services. Integrated with AI chatbot for customer service.
-              <br>
-              <br>
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://peptalkhealth.com/" target="_blank" class="cta-btn text-color-main">See Live</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/peptalkhealth.png" class="img-fluid" alt="PepTalk Health Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">RREquipment</h3>
-            <p class="project-wrapper__text-info">
-              A web app for finding, purchasing, and selling used manufacturing equipment.
-              <br>
-              <br>
-              Built with Next.js, TypeScript, React, Tailwind CSS and Framer Motion.
-              <br>
-              <br>
-              The backend is built with Supabase postgres Database and storage, with edge functions in Node.js.
-              <br>
-              <br>
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://equipmentdoubler.com/" target="_blank" class="cta-btn text-color-main">See Live</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/rrequipment.png" class="img-fluid" alt="RR Equipment Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Investualize</h3>
-            <p class="project-wrapper__text-info">
-             Visually demonstrate a group's (or guru's) historical trades and current positions. 
-              Data is pulled from a discord server and visualized in interesting plots or graphs. Upcoming features include sentiment analysis
-              and historical trend analysis. 
-              <br>
-              <br>
-              Disclaimer! This software was created as a pet project of mine to combine the powers of human, algorithmic and LLM 
-              trade analysis. This software is not to be used to grab data from any trading group or partnership without their explicit consent. 
-              This software project uses sample data.
-            </p>
-            <!-- <div class="project-wrapper__text-btns">
-              <a href="https://github.com/oslabs-beta/Cachier" target="_blank" class="cta-btn text-color-main">Source
-                Code</a>
-            </div> -->
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/datavisapp.png" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Cachier</h3>
-            <p class="project-wrapper__text-info">
-              An open source library of GraphQL caching solutions to make developing with GraphQL easier and faster.
-              Client & server-side deployable custom eviction policy, cache normalization and partial query retrieval.
-              Currently, we provide 3 npm packages under the name @cachier. We also launched a demo app to visualize the
-              efficiency of our solutions.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <!-- <a href="https://cachierql.com/" target="_blank" rel="noopener noreferrer"
-                class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a> -->
-              <a href="https://github.com/oslabs-beta/Cachier" target="_blank" class="cta-btn text-color-main">Source
-                Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/CachierDemoVeed.gif" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">gameBetter</h3>
-            <p class="project-wrapper__text-info">
-              A suite of games to help you become a superior gamer. Flush with a SQL user and global scoreboard
-              database. Try your hand at Aim Trainer, Reaction Time, Memory Booster and others!
-            </p>
-            <div class="project-wrapper__text-btns">
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a> -->
-              <a href="https://github.com/ARMDK/pfaIteration" target="_blank" class="cta-btn text-color-main">Source
-                Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/gameBetter_Demo.gif" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Quitr</h3>
-            <p class="project-wrapper__text-info">
-              Addiction/bad habit-breaking app that helps track your qutting journey, providing motivation and health
-              facts based on your habit and stage. Shortly releasing a social feature which enables a buddy system to
-              help you on your journey. Are you strong enough to drop that habit and become a Quitr?
-            </p>
-            <div class="project-wrapper__text-btns">
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a> -->
-              <a href="https://github.com/quittersarewinners/Quitr" target="_blank"
-                class="cta-btn text-color-main">Contribute</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/Quitr-pic.jpeg" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Jushin</h3>
-            <p class="project-wrapper__text-info">
-              An online web reception chat room built with WebRTC, OAuth 2.0. Shareable private links, so you can chat
-              with your best friend or join a public room based on topics. Peer-to-peer video/audio calls enabled by
-              PeerJS.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a> -->
-              <a href="https://github.com/Geodudr/Geodudr" target="_blank" class="cta-btn text-color-main">Source
-                Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/Jushin-pic.jpeg" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Nurture</h3>
-            <p class="project-wrapper__text-info">
-              A school administration software to monitor students homework loads by class, grade and teacher. Ensure
-              teachers are not torturing students and instead are nurturing them!
-            </p>
-            <div class="project-wrapper__text-btns">
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a> -->
-              <a href="https://github.com/PGCHedka/NurtureSaaS" target="_blank" class="cta-btn text-color-main">Source
-                Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img src="./assets/Nurture-pic.png" class="img-fluid" alt="Project Image" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
+      <h2 class="section-title">Contrátame</h2>
       <div class="contact-wrapper">
-        <p class="contact-wrapper__text">I would love to discuss ideas, get in touch with me.</p>
-        <a href="https://www.linkedin.com/in/dhruv-thota/" target="_blank" class="cta-btn cta-btn--resume">Let's collaborate!</a>
+          <div class="contact-datos">
+          <p>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:huatiacuri@gmail.com">huatiacuri@gmail.com</a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+51996740789">+51 996 740 789</a>
+          </p>
+          <p>
+            <i class="fa fa-linkedin"></i>
+            <a href="https://linkedin.com/in/miguel-gil-castro" target="_blank" rel="noopener noreferrer">linkedin.com/in/miguel-gil-castro</a>
+          </p>
+          <p>
+            <i class="fa fa-map-marker"></i>
+            Lima, Perú
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -414,26 +353,15 @@ Have fun creating your portfolio on this template!!! -->
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/dhruv-thota/" target="_blank" rel="noopener noreferrer"
-          aria-label="linkedin">
+        <a href="https://linkedin.com/in/miguel-gil-castro" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
           <i class="fa fa-linkedin"></i>
         </a>
-        <a href="https://www.instagram.com/downtowndhruv/" target="_blank" rel="noopener noreferrer"
-          aria-label="instagram">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="https://medium.com/@DhruvThota" target="_blank" rel="noopener noreferrer" aria-label="codepen">
-          <i class="fa fa-medium" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/L05Dhruv" target="_blank" rel="noopener noreferrer" aria-label="github">
-          <i class="fa fa-github"></i>
+        <a href="mailto:huatiacuri@gmail.com" aria-label="email">
+          <i class="fa fa-envelope"></i>
         </a>
       </div>
       <hr />
-      <p class="footer__text">
-        <!-- &copy; <span id="year"></span> - Template by
-        <a href="https://github.com/AnilSeervi" target="_blank" rel="noopener noreferrer">Anil Seervi</a>. <br /> -->
-      </p>
+      <p class="footer__text"></p>
     </div>
   </footer>
   <!-- END Footer Section -->
