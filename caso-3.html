@@ -138,6 +138,31 @@
         font-size: 1.9rem;
       }
     }
+
+    .imagenes-doble {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.imagenes-doble img {
+  width: 48%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 56.25em) {
+  .imagenes-doble {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .imagenes-doble img {
+    width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -194,6 +219,11 @@
         </ul>
       </li>
     </ul>
+
+    <div class="imagenes-doble">
+  <img src="./assets/problema.png" alt="Problema con marketing" />
+  <img src="./assets/problema2.png" alt="Problema con desarrollo" />
+</div>
 
    
 
