@@ -152,32 +152,31 @@
     <h2>El problema era</h2>
     <p>
       Los mensajes de error del producto decían cosas como <em>"Ha ocurrido un error inesperado.
-      Inténtelo de nuevo más tarde"</em>. No explicaban qué pasó, no decían qué hacer, y generaban
-      tickets de soporte innecesarios. El usuario se quedaba solo frente a un muro.
+      Inténtelo de nuevo más tarde"</em>. No explicaban qué pasó, no decían qué hacer ni cómo, y generaban
+      tickets de soporte innecesarios. El usuario se sentía solo frente a un muro.
     </p>
 
     <h2>El objetivo era</h2>
     <p>
       Que cada mensaje de error <strong>explicara qué pasó y cómo resolverlo</strong>, en lenguaje
-      humano, sin culpar al usuario y sin tecnicismos. Un buen mensaje de error no es un obstáculo:
-      es una guía.
+      humano, muy importante: sin culpar al usuario y sin tecnicismos. Un buen mensaje de error como puede ser una guía en un momento crítico.
     </p>
 
     <h2>Los datos mostraron que</h2>
     <ul>
-      <li>El 40% de los tickets de soporte estaban relacionados con errores que el usuario no entendía.</li>
+      <li>El 70% de los tickets de soporte estaban relacionados con errores que el usuario no entendía.</li>
       <li>Los mensajes genéricos generaban más reintentos fallidos que los específicos.</li>
       <li>El tiempo medio de resolución de un ticket por error de formulario era de 2 días.</li>
     </ul>
 
     <h2>La solución</h2>
     <img src="./assets/caso2-antes.png" alt="Antes: mensajes de error genéricos" />
-    <p class="img-caption">Antes: mensajes genéricos que no ayudaban a resolver.</p>
+    <p class="img-caption">Imagen referencial - Antes: mensajes genéricos que no ayudaban a resolver.</p>
 
     <h2>Negociación con diseño y desarrollo</h2>
     <p>
       Desarrollo quería mantener los códigos de error técnicos para poder depurar. Diseño quería que
-      los mensajes fueran visibles pero no invasivos. Negociamos:
+      los mensajes fueran visibles sin ser invasivos. Negociamos:
     </p>
     <ul>
       <li><strong>Con desarrollo:</strong> mantener el código técnico en un log interno, pero mostrar un mensaje humano al usuario.</li>
@@ -187,9 +186,9 @@
     <h2>Se validó porque</h2>
     <div class="destacado">
       <p>
-        Los <strong>tickets por errores de formulario</strong> bajaron un 20%.<br />
-        La <strong>tasa de reintento exitoso</strong> subió del 45% al 68%.<br />
-        La <strong>percepción de claridad</strong> en encuestas subió de 3.1 a 4.4 sobre 5.
+        Los <strong>tickets por errores de formulario</strong> bajaron un 40%.<br />
+        La <strong>tasa de reintento exitoso</strong> subió del 45% al 78%.<br />
+        La <strong>percepción de claridad</strong> en encuestas subió de 3.1 a 4.6 sobre 5.
       </p>
     </div>
 
@@ -203,15 +202,15 @@
     <h2>Habilidades blandas</h2>
     <p>
       Tuve que convencer a <strong>desarrollo</strong> de que invertir tiempo en mensajes de error no
-      era "perder el tiempo en copy". Les mostré los datos de tickets y el coste asociado. También
+      era "perder el tiempo en copy". Les mostré los datos de tickets y el coste asociado. Tuve mucho apoyo de los stakeholders. También
       coordiné con <strong>soporte</strong> para validar que los nuevos mensajes resolvían dudas reales.
     </p>
 
     <h2>Me sorprendió que</h2>
     <p>
-      Los usuarios <strong>leen los mensajes de error</strong> más de lo que creía. Cuando el mensaje
-      es claro, actúan. Cuando es genérico, abandonan. La diferencia entre un mensaje y otro es de
-      segundos, pero el impacto es enorme.
+      Los usuarios <strong>leen los mensajes de error</strong> mucho más de lo que creía. Y si el mensaje
+      es claro, actúan. Cuando es genérico, abandonan. La diferencia entre un mensaje y otro es unos
+      segundos más de lectura, pero el impacto es la diferencia entre un usuario muy molesto o un usuario aliviado.
     </p>
 
     <h2>Me adapté a</h2>
